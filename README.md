@@ -1,0 +1,2 @@
+# hikingCompanion
+Hiking application
