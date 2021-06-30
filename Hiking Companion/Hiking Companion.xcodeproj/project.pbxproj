@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21CB3DF8268CB27700CA1F1B /* Hiking_CompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3DF7268CB27700CA1F1B /* Hiking_CompanionApp.swift */; };
+		21CB3DFA268CB27700CA1F1B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3DF9268CB27700CA1F1B /* MainView.swift */; };
+		21CB3DFC268CB27900CA1F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CB3DFB268CB27900CA1F1B /* Assets.xcassets */; };
+		21CB3DFF268CB27900CA1F1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CB3DFE268CB27900CA1F1B /* Preview Assets.xcassets */; };
+		21CB3E07268CB62500CA1F1B /* HikingMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3E06268CB62500CA1F1B /* HikingMapView.swift */; };
+		21CB3E09268CB65400CA1F1B /* HikingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3E08268CB65400CA1F1B /* HikingListView.swift */; };
+		21CB3E0C268CB6AC00CA1F1B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21CB3E0E268CB6AC00CA1F1B /* Localizable.strings */; };
+		21EC26F5268CB8920025611A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC26F4268CB8920025611A /* SettingsView.swift */; };
+		21EC26FD268CBF740025611A /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 21EC26FC268CBF740025611A /* Sentry */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		21CB3DF4268CB27700CA1F1B /* Hiking Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hiking Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CB3DF7268CB27700CA1F1B /* Hiking_CompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hiking_CompanionApp.swift; sourceTree = "<group>"; };
+		21CB3DF9268CB27700CA1F1B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		21CB3DFB268CB27900CA1F1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		21CB3DFE268CB27900CA1F1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		21CB3E00268CB27900CA1F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21CB3E06268CB62500CA1F1B /* HikingMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingMapView.swift; sourceTree = "<group>"; };
+		21CB3E08268CB65400CA1F1B /* HikingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingListView.swift; sourceTree = "<group>"; };
+		21EC26F3268CB7C70025611A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		21EC26F4268CB8920025611A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21CB3DF1268CB27700CA1F1B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21EC26FD268CBF740025611A /* Sentry in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21CB3DEB268CB27700CA1F1B = {
+			isa = PBXGroup;
+			children = (
+				21CB3DF6268CB27700CA1F1B /* Hiking Companion */,
+				21CB3DF5268CB27700CA1F1B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21CB3DF5268CB27700CA1F1B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21CB3DF4268CB27700CA1F1B /* Hiking Companion.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21CB3DF6268CB27700CA1F1B /* Hiking Companion */ = {
+			isa = PBXGroup;
+			children = (
+				21CB3DF7268CB27700CA1F1B /* Hiking_CompanionApp.swift */,
+				21CB3E0F268CB6BB00CA1F1B /* Views */,
+				21CB3DFB268CB27900CA1F1B /* Assets.xcassets */,
+				21CB3E00268CB27900CA1F1B /* Info.plist */,
+				21CB3E0E268CB6AC00CA1F1B /* Localizable.strings */,
+				21CB3DFD268CB27900CA1F1B /* Preview Content */,
+			);
+			path = "Hiking Companion";
+			sourceTree = "<group>";
+		};
+		21CB3DFD268CB27900CA1F1B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				21CB3DFE268CB27900CA1F1B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		21CB3E0F268CB6BB00CA1F1B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				21CB3DF9268CB27700CA1F1B /* MainView.swift */,
+				21CB3E06268CB62500CA1F1B /* HikingMapView.swift */,
+				21CB3E08268CB65400CA1F1B /* HikingListView.swift */,
+				21EC26F4268CB8920025611A /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21CB3DF3268CB27700CA1F1B /* Hiking Companion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21CB3E03268CB27900CA1F1B /* Build configuration list for PBXNativeTarget "Hiking Companion" */;
+			buildPhases = (
+				21CB3DF0268CB27700CA1F1B /* Sources */,
+				21CB3DF1268CB27700CA1F1B /* Frameworks */,
+				21CB3DF2268CB27700CA1F1B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hiking Companion";
+			packageProductDependencies = (
+				21EC26FC268CBF740025611A /* Sentry */,
+			);
+			productName = "Hiking Companion";
+			productReference = 21CB3DF4268CB27700CA1F1B /* Hiking Companion.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21CB3DEC268CB27700CA1F1B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					21CB3DF3268CB27700CA1F1B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 21CB3DEF268CB27700CA1F1B /* Build configuration list for PBXProject "Hiking Companion" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = fr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				fr,
+				Base,
+			);
+			mainGroup = 21CB3DEB268CB27700CA1F1B;
+			packageReferences = (
+				21EC26FB268CBF730025611A /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+			);
+			productRefGroup = 21CB3DF5268CB27700CA1F1B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21CB3DF3268CB27700CA1F1B /* Hiking Companion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21CB3DF2268CB27700CA1F1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21CB3DFF268CB27900CA1F1B /* Preview Assets.xcassets in Resources */,
+				21CB3E0C268CB6AC00CA1F1B /* Localizable.strings in Resources */,
+				21CB3DFC268CB27900CA1F1B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21CB3DF0268CB27700CA1F1B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21EC26F5268CB8920025611A /* SettingsView.swift in Sources */,
+				21CB3E09268CB65400CA1F1B /* HikingListView.swift in Sources */,
+				21CB3DFA268CB27700CA1F1B /* MainView.swift in Sources */,
+				21CB3DF8268CB27700CA1F1B /* Hiking_CompanionApp.swift in Sources */,
+				21CB3E07268CB62500CA1F1B /* HikingMapView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		21CB3E0E268CB6AC00CA1F1B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21EC26F3268CB7C70025611A /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21CB3E01268CB27900CA1F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		21CB3E02268CB27900CA1F1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21CB3E04268CB27900CA1F1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Hiking Companion/Preview Content\"";
+				DEVELOPMENT_TEAM = U8L3UEDRCE;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Hiking Companion/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cederache.hikingCompanion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		21CB3E05268CB27900CA1F1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Hiking Companion/Preview Content\"";
+				DEVELOPMENT_TEAM = U8L3UEDRCE;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Hiking Companion/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cederache.hikingCompanion;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21CB3DEF268CB27700CA1F1B /* Build configuration list for PBXProject "Hiking Companion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CB3E01268CB27900CA1F1B /* Debug */,
+				21CB3E02268CB27900CA1F1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21CB3E03268CB27900CA1F1B /* Build configuration list for PBXNativeTarget "Hiking Companion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21CB3E04268CB27900CA1F1B /* Debug */,
+				21CB3E05268CB27900CA1F1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		21EC26FB268CBF730025611A /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/getsentry/sentry-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		21EC26FC268CBF740025611A /* Sentry */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21EC26FB268CBF730025611A /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
+			productName = Sentry;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 21CB3DEC268CB27700CA1F1B /* Project object */;
+}
