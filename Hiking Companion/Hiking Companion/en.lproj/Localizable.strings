@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Hiking Companion
+
+  Created by Cédric Derache on 30/06/2021.
+  
+*/
+"map" = "Plan";
+"list" = "Liste";
