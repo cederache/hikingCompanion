@@ -15,7 +15,18 @@
 		21CB3E09268CB65400CA1F1B /* HikingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3E08268CB65400CA1F1B /* HikingListView.swift */; };
 		21CB3E0C268CB6AC00CA1F1B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21CB3E0E268CB6AC00CA1F1B /* Localizable.strings */; };
 		21EC26F5268CB8920025611A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC26F4268CB8920025611A /* SettingsView.swift */; };
+		21EC26F8268CBF3B0025611A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 21EC26F7268CBF3B0025611A /* Realm */; };
+		21EC26FA268CBF3B0025611A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 21EC26F9268CBF3B0025611A /* RealmSwift */; };
 		21EC26FD268CBF740025611A /* Sentry in Frameworks */ = {isa = PBXBuildFile; productRef = 21EC26FC268CBF740025611A /* Sentry */; };
+		21EC2700268CC2740025611A /* ListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC26FF268CC2740025611A /* ListItem.swift */; };
+		21EC2702268CC2DE0025611A /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC2701268CC2DE0025611A /* Entity.swift */; };
+		21EC2705268CC3250025611A /* Realm+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC2704268CC3250025611A /* Realm+Utils.swift */; };
+		21EC2708268CC3410025611A /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC2707268CC3410025611A /* DatabaseManager.swift */; };
+		21EC270D268CC3B60025611A /* LoggingProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC270A268CC3B60025611A /* LoggingProxy.swift */; };
+		21EC270E268CC3B60025611A /* EmojiModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC270B268CC3B60025611A /* EmojiModifier.swift */; };
+		21EC270F268CC3B60025611A /* LoggingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC270C268CC3B60025611A /* LoggingConfiguration.swift */; };
+		21EC2712268CC6370025611A /* Willow in Frameworks */ = {isa = PBXBuildFile; productRef = 21EC2711268CC6370025611A /* Willow */; };
+		21EC2714268CC97D0025611A /* HikingListItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC2713268CC97D0025611A /* HikingListItemRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +40,14 @@
 		21CB3E08268CB65400CA1F1B /* HikingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingListView.swift; sourceTree = "<group>"; };
 		21EC26F3268CB7C70025611A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		21EC26F4268CB8920025611A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		21EC26FF268CC2740025611A /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
+		21EC2701268CC2DE0025611A /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		21EC2704268CC3250025611A /* Realm+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Realm+Utils.swift"; sourceTree = "<group>"; };
+		21EC2707268CC3410025611A /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		21EC270A268CC3B60025611A /* LoggingProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingProxy.swift; sourceTree = "<group>"; };
+		21EC270B268CC3B60025611A /* EmojiModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiModifier.swift; sourceTree = "<group>"; };
+		21EC270C268CC3B60025611A /* LoggingConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingConfiguration.swift; sourceTree = "<group>"; };
+		21EC2713268CC97D0025611A /* HikingListItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingListItemRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +55,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EC2712268CC6370025611A /* Willow in Frameworks */,
+				21EC26FA268CBF3B0025611A /* RealmSwift in Frameworks */,
+				21EC26F8268CBF3B0025611A /* Realm in Frameworks */,
 				21EC26FD268CBF740025611A /* Sentry in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +84,9 @@
 		21CB3DF6268CB27700CA1F1B /* Hiking Companion */ = {
 			isa = PBXGroup;
 			children = (
+				21EC2706268CC3370025611A /* Managers */,
+				21EC2703268CC31B0025611A /* Utils */,
+				21EC26FE268CC2660025611A /* Entities */,
 				21CB3DF7268CB27700CA1F1B /* Hiking_CompanionApp.swift */,
 				21CB3E0F268CB6BB00CA1F1B /* Views */,
 				21CB3DFB268CB27900CA1F1B /* Assets.xcassets */,
@@ -87,8 +112,45 @@
 				21CB3E06268CB62500CA1F1B /* HikingMapView.swift */,
 				21CB3E08268CB65400CA1F1B /* HikingListView.swift */,
 				21EC26F4268CB8920025611A /* SettingsView.swift */,
+				21EC2713268CC97D0025611A /* HikingListItemRow.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		21EC26FE268CC2660025611A /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				21EC26FF268CC2740025611A /* ListItem.swift */,
+				21EC2701268CC2DE0025611A /* Entity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		21EC2703268CC31B0025611A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				21EC2704268CC3250025611A /* Realm+Utils.swift */,
+				21EC2709268CC3B60025611A /* Willow Logger */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		21EC2706268CC3370025611A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				21EC2707268CC3410025611A /* DatabaseManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		21EC2709268CC3B60025611A /* Willow Logger */ = {
+			isa = PBXGroup;
+			children = (
+				21EC270A268CC3B60025611A /* LoggingProxy.swift */,
+				21EC270B268CC3B60025611A /* EmojiModifier.swift */,
+				21EC270C268CC3B60025611A /* LoggingConfiguration.swift */,
+			);
+			path = "Willow Logger";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,7 +170,10 @@
 			);
 			name = "Hiking Companion";
 			packageProductDependencies = (
+				21EC26F7268CBF3B0025611A /* Realm */,
+				21EC26F9268CBF3B0025611A /* RealmSwift */,
 				21EC26FC268CBF740025611A /* Sentry */,
+				21EC2711268CC6370025611A /* Willow */,
 			);
 			productName = "Hiking Companion";
 			productReference = 21CB3DF4268CB27700CA1F1B /* Hiking Companion.app */;
@@ -138,7 +203,9 @@
 			);
 			mainGroup = 21CB3DEB268CB27700CA1F1B;
 			packageReferences = (
+				21EC26F6268CBF3B0025611A /* XCRemoteSwiftPackageReference "realm-cocoa" */,
 				21EC26FB268CBF730025611A /* XCRemoteSwiftPackageReference "sentry-cocoa" */,
+				21EC2710268CC6370025611A /* XCRemoteSwiftPackageReference "Willow" */,
 			);
 			productRefGroup = 21CB3DF5268CB27700CA1F1B /* Products */;
 			projectDirPath = "";
@@ -167,11 +234,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EC270F268CC3B60025611A /* LoggingConfiguration.swift in Sources */,
+				21EC2700268CC2740025611A /* ListItem.swift in Sources */,
+				21EC2705268CC3250025611A /* Realm+Utils.swift in Sources */,
+				21EC2714268CC97D0025611A /* HikingListItemRow.swift in Sources */,
+				21EC270D268CC3B60025611A /* LoggingProxy.swift in Sources */,
 				21EC26F5268CB8920025611A /* SettingsView.swift in Sources */,
+				21EC2702268CC2DE0025611A /* Entity.swift in Sources */,
+				21EC270E268CC3B60025611A /* EmojiModifier.swift in Sources */,
 				21CB3E09268CB65400CA1F1B /* HikingListView.swift in Sources */,
 				21CB3DFA268CB27700CA1F1B /* MainView.swift in Sources */,
 				21CB3DF8268CB27700CA1F1B /* Hiking_CompanionApp.swift in Sources */,
 				21CB3E07268CB62500CA1F1B /* HikingMapView.swift in Sources */,
+				21EC2708268CC3410025611A /* DatabaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +448,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		21EC26F6268CBF3B0025611A /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.8.1;
+			};
+		};
 		21EC26FB268CBF730025611A /* XCRemoteSwiftPackageReference "sentry-cocoa" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/getsentry/sentry-cocoa.git";
@@ -381,13 +464,36 @@
 				minimumVersion = 7.1.3;
 			};
 		};
+		21EC2710268CC6370025611A /* XCRemoteSwiftPackageReference "Willow" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Nike-Inc/Willow.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		21EC26F7268CBF3B0025611A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21EC26F6268CBF3B0025611A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		21EC26F9268CBF3B0025611A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21EC26F6268CBF3B0025611A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
 		21EC26FC268CBF740025611A /* Sentry */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 21EC26FB268CBF730025611A /* XCRemoteSwiftPackageReference "sentry-cocoa" */;
 			productName = Sentry;
+		};
+		21EC2711268CC6370025611A /* Willow */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 21EC2710268CC6370025611A /* XCRemoteSwiftPackageReference "Willow" */;
+			productName = Willow;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
