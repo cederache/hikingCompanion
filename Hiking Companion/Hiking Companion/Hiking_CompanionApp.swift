@@ -33,6 +33,7 @@ struct Hiking_CompanionApp: App {
         WindowGroup {
             MainView()
                 .onAppear(perform: onAppear)
+                .environmentObject(ListItemsStore.Instance)
         }
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		217AC39F268DA95900A19F7D /* View+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AC39E268DA95900A19F7D /* View+Utils.swift */; };
+		217AC3A1268DB12900A19F7D /* ListItemsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AC3A0268DB12900A19F7D /* ListItemsStore.swift */; };
 		21CB3DF8268CB27700CA1F1B /* Hiking_CompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3DF7268CB27700CA1F1B /* Hiking_CompanionApp.swift */; };
 		21CB3DFA268CB27700CA1F1B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3DF9268CB27700CA1F1B /* MainView.swift */; };
 		21CB3DFC268CB27900CA1F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CB3DFB268CB27900CA1F1B /* Assets.xcassets */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		217AC39E268DA95900A19F7D /* View+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Utils.swift"; sourceTree = "<group>"; };
+		217AC3A0268DB12900A19F7D /* ListItemsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsStore.swift; sourceTree = "<group>"; };
 		21CB3DF4268CB27700CA1F1B /* Hiking Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hiking Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CB3DF7268CB27700CA1F1B /* Hiking_CompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hiking_CompanionApp.swift; sourceTree = "<group>"; };
 		21CB3DF9268CB27700CA1F1B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -131,6 +135,7 @@
 			children = (
 				21EC2704268CC3250025611A /* Realm+Utils.swift */,
 				21EC2709268CC3B60025611A /* Willow Logger */,
+				217AC39E268DA95900A19F7D /* View+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -139,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				21EC2707268CC3410025611A /* DatabaseManager.swift */,
+				217AC3A0268DB12900A19F7D /* ListItemsStore.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -238,8 +244,10 @@
 				21EC2700268CC2740025611A /* ListItem.swift in Sources */,
 				21EC2705268CC3250025611A /* Realm+Utils.swift in Sources */,
 				21EC2714268CC97D0025611A /* HikingListItemRow.swift in Sources */,
+				217AC39F268DA95900A19F7D /* View+Utils.swift in Sources */,
 				21EC270D268CC3B60025611A /* LoggingProxy.swift in Sources */,
 				21EC26F5268CB8920025611A /* SettingsView.swift in Sources */,
+				217AC3A1268DB12900A19F7D /* ListItemsStore.swift in Sources */,
 				21EC2702268CC2DE0025611A /* Entity.swift in Sources */,
 				21EC270E268CC3B60025611A /* EmojiModifier.swift in Sources */,
 				21CB3E09268CB65400CA1F1B /* HikingListView.swift in Sources */,

@@ -86,7 +86,7 @@ extension Object {
         return res.first
     }
     
-    static func getFirst(where fieldName: String, value: String, sortedBy sortKeyPath: String? = nil, ascending: Bool = true) -> Object? {
+    static func getFirst(where fieldName: String, value: String?, sortedBy sortKeyPath: String? = nil, ascending: Bool = true) -> Object? {
         return getAll(where: fieldName, value: value, sortedBy: sortKeyPath, ascending: ascending).first
     }
 
@@ -94,9 +94,13 @@ extension Object {
         DatabaseManager.Instance.realm.object(ofType: Self.self, forPrimaryKey: id)
     }
 
-    static func getAll(where fieldName: String, value: String, sortedBy sortKeyPath: String? = nil, ascending: Bool = true) -> [Object] {
+    static func getAll(where fieldName: String, value: String?, sortedBy sortKeyPath: String? = nil, ascending: Bool = true) -> [Object] {
         var res = DatabaseManager.Instance.realm.objects(Self.self)
-            .filter("\(fieldName)=%@", value)
+        if value == nil {
+            res = res.filter("\(fieldName)=nil")
+        } else {
+            res = res.filter("\(fieldName)=%@", value!)
+        }
         if sortKeyPath != nil {
             res = res.sorted(byKeyPath: sortKeyPath!, ascending: ascending)
         }
@@ -175,138 +179,5 @@ func assertTypeIsDecodable<T>(_ type: T.Type, in wrappingType: Any.Type) {
         } else {
             preconditionFailure("\(wrappingType) does not conform to Decodable because \(T.self) does not conform to Decodable.")
         }
-    }
-}
-
-extension RealmOptional where Value: Encodable {
-    public func encode(to encoder: Encoder) throws {
-        assertTypeIsEncodable(Value.self, in: type(of: self))
-
-        var container = encoder.singleValueContainer()
-        if let v = self.value {
-            try (v as Encodable).encode(to: encoder) // swiftlint:disable:this force_cast
-        } else {
-            try container.encodeNil()
-        }
-    }
-}
-
-extension RealmOptional where Value: Decodable {
-    public convenience init(from decoder: Decoder) throws {
-        // Initialize self here so we can get type(of: self).
-        self.init()
-        assertTypeIsDecodable(Value.self, in: type(of: self))
-
-        let container = try decoder.singleValueContainer()
-        if !container.decodeNil() {
-            let metaType = (Value.self as Decodable.Type) // swiftlint:disable:this force_cast
-            let element = try metaType.init(from: decoder)
-            value = (element as! Value) // swiftlint:disable:this force_cast
-        }
-    }
-}
-
-class OptionalInt: Object, Codable {
-    private var numeric = RealmOptional<Int>()
-
-    public required convenience init(from decoder: Decoder) throws {
-        self.init()
-
-        let singleValueContainer = try decoder.singleValueContainer()
-        if singleValueContainer.decodeNil() == false {
-            let value = try singleValueContainer.decode(Int.self)
-            numeric = RealmOptional<Int>(value)
-        }
-    }
-
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.singleValueContainer()
-        if let v = self.numeric.value {
-            try (v as Encodable).encode(to: encoder) // swiftlint:disable:this force_cast
-        } else {
-            try container.encodeNil()
-        }
-    }
-
-    var value: Int? {
-        return numeric.value
-    }
-
-    var zeroOrValue: Int {
-        return numeric.value ?? 0
-    }
-
-    func setValue(_ value: Int?) {
-        numeric.value = value
-    }
-}
-
-class OptionalBool: Object, Codable {
-    private var numeric = RealmOptional<Bool>()
-
-    public required convenience init(from decoder: Decoder) throws {
-        self.init()
-
-        let singleValueContainer = try decoder.singleValueContainer()
-        if singleValueContainer.decodeNil() == false {
-            let value = try singleValueContainer.decode(Bool.self)
-            numeric = RealmOptional<Bool>(value)
-        }
-    }
-
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.singleValueContainer()
-        if let v = self.numeric.value {
-            try (v as Encodable).encode(to: encoder) // swiftlint:disable:this force_cast
-        } else {
-            try container.encodeNil()
-        }
-    }
-
-    var value: Bool? {
-        return numeric.value
-    }
-
-    var falseOrValue: Bool {
-        return numeric.value ?? false
-    }
-
-    func setValue(_ value: Bool?) {
-        numeric.value = value
-    }
-}
-
-class OptionalDouble: Object, Codable {
-    private var numeric = RealmOptional<Double>()
-
-    public required convenience init(from decoder: Decoder) throws {
-        self.init()
-
-        let singleValueContainer = try decoder.singleValueContainer()
-        if singleValueContainer.decodeNil() == false {
-            let value = try singleValueContainer.decode(Double.self)
-            numeric = RealmOptional<Double>(value)
-        }
-    }
-
-    public func encode(to encoder: Encoder) throws {
-        var container = encoder.singleValueContainer()
-        if let v = self.numeric.value {
-            try (v as Encodable).encode(to: encoder) // swiftlint:disable:this force_cast
-        } else {
-            try container.encodeNil()
-        }
-    }
-
-    var value: Double? {
-        return numeric.value
-    }
-
-    var zeroOrValue: Double {
-        return numeric.value ?? 0
-    }
-
-    func setValue(_ value: Double?) {
-        numeric.value = value
     }
 }

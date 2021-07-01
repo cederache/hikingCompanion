@@ -54,7 +54,7 @@ class DatabaseManager {
                 Realm.Configuration.defaultConfiguration.inMemoryIdentifier = "HikingCompanion"
             } else {
                 // Use customConfiguration to handle schema migration : https://stackoverflow.com/a/33363554
-                let newSchemaVersion: UInt64 = 1
+                let newSchemaVersion: UInt64 = 3
                 let configuration = Realm.Configuration(
                     schemaVersion: newSchemaVersion,
                     migrationBlock: { migration, oldSchemaVersion in
@@ -63,7 +63,6 @@ class DatabaseManager {
                         crumb.category = "techHistory"
                         crumb.message = "DatabaseManager migrationBlock (from \(oldSchemaVersion) to \(newSchemaVersion))"
                         SentrySDK.addBreadcrumb(crumb: crumb)
-                        
                     }
                 )
                 Realm.Configuration.defaultConfiguration = configuration

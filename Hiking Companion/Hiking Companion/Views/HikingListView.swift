@@ -8,41 +8,63 @@
 import SwiftUI
 
 struct HikingListView: View {
-    @State private var items: [ListItem] = []
+    @EnvironmentObject var listItemsStore: ListItemsStore
 
     func fetchData() {
-        items = ListItem.getAll() as! [ListItem]
-        
-        if items.count == 0 {
-            items.append(ListItem(name: "new"))
-        }
+        listItemsStore.fetch()
     }
 
     var body: some View {
         NavigationView {
-            List {
-                ForEach(items, id: \.self) { item in
-                    HikingListItemRow(item: item) {
-                        self.fetchData()
+            VStack {
+                List {
+                    ForEach(listItemsStore.listItems) { item in
+                        HikingListItemRow(itemId: item.id) {
+                            self.fetchData()
+                        }
+
+                        if item.expanded {
+                            ForEach(item.subItems()) { subItem in
+                                HikingListItemRow(itemId: subItem.id) {
+                                    self.fetchData()
+                                }
+                            }
+                        }
                     }
+                    .onDelete(perform: delete)
+                    .onMove(perform: move)
                 }
-                .onDelete(perform: delete)
-                .onMove(perform: move)
-            }
-            .toolbar {
-                EditButton()
-                    .disabled(items.count == 0)
-            }
-            .navigationTitle(Text("item_list"))
-            .onAppear {
-                self.fetchData()
+                .toolbar {
+                    EditButton()
+                        .disabled(listItemsStore.listItems.count == 0)
+                }
+                .navigationTitle(Text("item_list"))
+                .onAppear {
+                    self.fetchData()
+                }
+                .listStyle(PlainListStyle())
+
+                HStack {
+                    Button(action: {
+                        let newItem = ListItem(name: "")
+                        newItem.save()
+                        listItemsStore.listItems.append(newItem)
+                    }) {
+                        Image(systemName: "plus.circle.fill")
+                        Text("new_item")
+                    }
+                    .foregroundColor(.accentColor)
+                    
+                    Spacer()
+                }
+                .padding()
             }
         }
     }
 
     func delete(at offsets: IndexSet) {
-        let itemsToDelete = offsets.map { self.items[$0] }
-        items.remove(atOffsets: offsets)
+        let itemsToDelete = offsets.map { self.listItemsStore.listItems[$0] }
+        listItemsStore.listItems.remove(atOffsets: offsets)
 
         ListItem.modifyIfNeeded {
             itemsToDelete.forEach({ item in
@@ -54,7 +76,7 @@ struct HikingListView: View {
     }
 
     func move(from source: IndexSet, to destination: Int) {
-        items.move(fromOffsets: source, toOffset: destination)
+        listItemsStore.listItems.move(fromOffsets: source, toOffset: destination)
     }
 }
 
