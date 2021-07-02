@@ -1,5 +1,5 @@
 //
-//  HikingListView.swift
+//  ListView.swift
 //  Hiking Companion
 //
 //  Created by Cédric Derache on 30/06/2021.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HikingListView: View {
+struct ListView: View {
     @EnvironmentObject var listItemsStore: ListItemsStore
 
     func fetchData() {
@@ -19,13 +19,13 @@ struct HikingListView: View {
             VStack {
                 List {
                     ForEach(listItemsStore.listItems) { item in
-                        HikingListItemRow(itemId: item.id) {
+                        ListItemRow(itemId: item.id) {
                             self.fetchData()
                         }
 
                         if item.expanded {
                             ForEach(item.subItems()) { subItem in
-                                HikingListItemRow(itemId: subItem.id) {
+                                ListItemRow(itemId: subItem.id) {
                                     self.fetchData()
                                 }
                             }
@@ -82,6 +82,6 @@ struct HikingListView: View {
 
 struct HikingListView_Previews: PreviewProvider {
     static var previews: some View {
-        HikingListView()
+        ListView()
     }
 }

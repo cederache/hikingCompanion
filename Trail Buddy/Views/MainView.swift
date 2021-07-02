@@ -12,7 +12,7 @@ struct MainView: View {
     
     var body: some View {
         TabView(selection: $selectedTabIndex) {
-            HikingMapView()
+            MapView()
             .tabItem {
                 Image(systemName: "map.fill")
                     .font(.system(size: 25))
@@ -20,7 +20,7 @@ struct MainView: View {
             }
             .tag(1)
             
-            HikingListView()
+            ListView()
             .tabItem {
                 Image(systemName: "list.bullet.indent")
                     .font(.system(size: 25))

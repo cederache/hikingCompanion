@@ -1,5 +1,5 @@
 //
-//  HikingListItemRow.swift
+//  ListItemRow.swift
 //  Hiking Companion
 //
 //  Created by Cédric Derache on 30/06/2021.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HikingListItemRow: View {
+struct ListItemRow: View {
     @EnvironmentObject var listItemsStore: ListItemsStore
     var itemId: String
 
@@ -64,6 +64,6 @@ struct HikingListItemRow: View {
 
 struct HikingListItemRow_Previews: PreviewProvider {
     static var previews: some View {
-        HikingListItemRow(itemId: "")
+        ListItemRow(itemId: "")
     }
 }

@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		217AC39F268DA95900A19F7D /* View+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AC39E268DA95900A19F7D /* View+Utils.swift */; };
 		217AC3A1268DB12900A19F7D /* ListItemsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AC3A0268DB12900A19F7D /* ListItemsStore.swift */; };
-		21CB3DF8268CB27700CA1F1B /* Hiking_CompanionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3DF7268CB27700CA1F1B /* Hiking_CompanionApp.swift */; };
+		21CB3DF8268CB27700CA1F1B /* Trail_BuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3DF7268CB27700CA1F1B /* Trail_BuddyApp.swift */; };
 		21CB3DFA268CB27700CA1F1B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3DF9268CB27700CA1F1B /* MainView.swift */; };
 		21CB3DFC268CB27900CA1F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CB3DFB268CB27900CA1F1B /* Assets.xcassets */; };
 		21CB3DFF268CB27900CA1F1B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CB3DFE268CB27900CA1F1B /* Preview Assets.xcassets */; };
-		21CB3E07268CB62500CA1F1B /* HikingMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3E06268CB62500CA1F1B /* HikingMapView.swift */; };
-		21CB3E09268CB65400CA1F1B /* HikingListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3E08268CB65400CA1F1B /* HikingListView.swift */; };
+		21CB3E07268CB62500CA1F1B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3E06268CB62500CA1F1B /* MapView.swift */; };
+		21CB3E09268CB65400CA1F1B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3E08268CB65400CA1F1B /* ListView.swift */; };
 		21CB3E0C268CB6AC00CA1F1B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21CB3E0E268CB6AC00CA1F1B /* Localizable.strings */; };
 		21EC26F5268CB8920025611A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC26F4268CB8920025611A /* SettingsView.swift */; };
 		21EC26F8268CBF3B0025611A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 21EC26F7268CBF3B0025611A /* Realm */; };
@@ -28,20 +28,20 @@
 		21EC270E268CC3B60025611A /* EmojiModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC270B268CC3B60025611A /* EmojiModifier.swift */; };
 		21EC270F268CC3B60025611A /* LoggingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC270C268CC3B60025611A /* LoggingConfiguration.swift */; };
 		21EC2712268CC6370025611A /* Willow in Frameworks */ = {isa = PBXBuildFile; productRef = 21EC2711268CC6370025611A /* Willow */; };
-		21EC2714268CC97D0025611A /* HikingListItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC2713268CC97D0025611A /* HikingListItemRow.swift */; };
+		21EC2714268CC97D0025611A /* ListItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC2713268CC97D0025611A /* ListItemRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		217AC39E268DA95900A19F7D /* View+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Utils.swift"; sourceTree = "<group>"; };
 		217AC3A0268DB12900A19F7D /* ListItemsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsStore.swift; sourceTree = "<group>"; };
-		21CB3DF4268CB27700CA1F1B /* Hiking Companion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hiking Companion.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		21CB3DF7268CB27700CA1F1B /* Hiking_CompanionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hiking_CompanionApp.swift; sourceTree = "<group>"; };
+		21CB3DF4268CB27700CA1F1B /* Trail Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trail Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		21CB3DF7268CB27700CA1F1B /* Trail_BuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trail_BuddyApp.swift; sourceTree = "<group>"; };
 		21CB3DF9268CB27700CA1F1B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		21CB3DFB268CB27900CA1F1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21CB3DFE268CB27900CA1F1B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		21CB3E00268CB27900CA1F1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		21CB3E06268CB62500CA1F1B /* HikingMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingMapView.swift; sourceTree = "<group>"; };
-		21CB3E08268CB65400CA1F1B /* HikingListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingListView.swift; sourceTree = "<group>"; };
+		21CB3E06268CB62500CA1F1B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		21CB3E08268CB65400CA1F1B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		21EC26F3268CB7C70025611A /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		21EC26F4268CB8920025611A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		21EC26FF268CC2740025611A /* ListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItem.swift; sourceTree = "<group>"; };
@@ -51,7 +51,7 @@
 		21EC270A268CC3B60025611A /* LoggingProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingProxy.swift; sourceTree = "<group>"; };
 		21EC270B268CC3B60025611A /* EmojiModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiModifier.swift; sourceTree = "<group>"; };
 		21EC270C268CC3B60025611A /* LoggingConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingConfiguration.swift; sourceTree = "<group>"; };
-		21EC2713268CC97D0025611A /* HikingListItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HikingListItemRow.swift; sourceTree = "<group>"; };
+		21EC2713268CC97D0025611A /* ListItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +72,7 @@
 		21CB3DEB268CB27700CA1F1B = {
 			isa = PBXGroup;
 			children = (
-				21CB3DF6268CB27700CA1F1B /* Hiking Companion */,
+				21CB3DF6268CB27700CA1F1B /* Trail Buddy */,
 				21CB3DF5268CB27700CA1F1B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,25 +80,25 @@
 		21CB3DF5268CB27700CA1F1B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				21CB3DF4268CB27700CA1F1B /* Hiking Companion.app */,
+				21CB3DF4268CB27700CA1F1B /* Trail Buddy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		21CB3DF6268CB27700CA1F1B /* Hiking Companion */ = {
+		21CB3DF6268CB27700CA1F1B /* Trail Buddy */ = {
 			isa = PBXGroup;
 			children = (
 				21EC2706268CC3370025611A /* Managers */,
 				21EC2703268CC31B0025611A /* Utils */,
 				21EC26FE268CC2660025611A /* Entities */,
-				21CB3DF7268CB27700CA1F1B /* Hiking_CompanionApp.swift */,
+				21CB3DF7268CB27700CA1F1B /* Trail_BuddyApp.swift */,
 				21CB3E0F268CB6BB00CA1F1B /* Views */,
 				21CB3DFB268CB27900CA1F1B /* Assets.xcassets */,
 				21CB3E00268CB27900CA1F1B /* Info.plist */,
 				21CB3E0E268CB6AC00CA1F1B /* Localizable.strings */,
 				21CB3DFD268CB27900CA1F1B /* Preview Content */,
 			);
-			path = "Hiking Companion";
+			path = "Trail Buddy";
 			sourceTree = "<group>";
 		};
 		21CB3DFD268CB27900CA1F1B /* Preview Content */ = {
@@ -113,10 +113,10 @@
 			isa = PBXGroup;
 			children = (
 				21CB3DF9268CB27700CA1F1B /* MainView.swift */,
-				21CB3E06268CB62500CA1F1B /* HikingMapView.swift */,
-				21CB3E08268CB65400CA1F1B /* HikingListView.swift */,
+				21CB3E06268CB62500CA1F1B /* MapView.swift */,
+				21CB3E08268CB65400CA1F1B /* ListView.swift */,
 				21EC26F4268CB8920025611A /* SettingsView.swift */,
-				21EC2713268CC97D0025611A /* HikingListItemRow.swift */,
+				21EC2713268CC97D0025611A /* ListItemRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,9 +162,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		21CB3DF3268CB27700CA1F1B /* Hiking Companion */ = {
+		21CB3DF3268CB27700CA1F1B /* Trail Buddy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 21CB3E03268CB27900CA1F1B /* Build configuration list for PBXNativeTarget "Hiking Companion" */;
+			buildConfigurationList = 21CB3E03268CB27900CA1F1B /* Build configuration list for PBXNativeTarget "Trail Buddy" */;
 			buildPhases = (
 				21CB3DF0268CB27700CA1F1B /* Sources */,
 				21CB3DF1268CB27700CA1F1B /* Frameworks */,
@@ -174,7 +174,7 @@
 			);
 			dependencies = (
 			);
-			name = "Hiking Companion";
+			name = "Trail Buddy";
 			packageProductDependencies = (
 				21EC26F7268CBF3B0025611A /* Realm */,
 				21EC26F9268CBF3B0025611A /* RealmSwift */,
@@ -182,7 +182,7 @@
 				21EC2711268CC6370025611A /* Willow */,
 			);
 			productName = "Hiking Companion";
-			productReference = 21CB3DF4268CB27700CA1F1B /* Hiking Companion.app */;
+			productReference = 21CB3DF4268CB27700CA1F1B /* Trail Buddy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 21CB3DEF268CB27700CA1F1B /* Build configuration list for PBXProject "Hiking Companion" */;
+			buildConfigurationList = 21CB3DEF268CB27700CA1F1B /* Build configuration list for PBXProject "Trail Buddy" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = fr;
 			hasScannedForEncodings = 0;
@@ -217,7 +217,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				21CB3DF3268CB27700CA1F1B /* Hiking Companion */,
+				21CB3DF3268CB27700CA1F1B /* Trail Buddy */,
 			);
 		};
 /* End PBXProject section */
@@ -243,17 +243,17 @@
 				21EC270F268CC3B60025611A /* LoggingConfiguration.swift in Sources */,
 				21EC2700268CC2740025611A /* ListItem.swift in Sources */,
 				21EC2705268CC3250025611A /* Realm+Utils.swift in Sources */,
-				21EC2714268CC97D0025611A /* HikingListItemRow.swift in Sources */,
+				21EC2714268CC97D0025611A /* ListItemRow.swift in Sources */,
 				217AC39F268DA95900A19F7D /* View+Utils.swift in Sources */,
 				21EC270D268CC3B60025611A /* LoggingProxy.swift in Sources */,
 				21EC26F5268CB8920025611A /* SettingsView.swift in Sources */,
 				217AC3A1268DB12900A19F7D /* ListItemsStore.swift in Sources */,
 				21EC2702268CC2DE0025611A /* Entity.swift in Sources */,
 				21EC270E268CC3B60025611A /* EmojiModifier.swift in Sources */,
-				21CB3E09268CB65400CA1F1B /* HikingListView.swift in Sources */,
+				21CB3E09268CB65400CA1F1B /* ListView.swift in Sources */,
 				21CB3DFA268CB27700CA1F1B /* MainView.swift in Sources */,
-				21CB3DF8268CB27700CA1F1B /* Hiking_CompanionApp.swift in Sources */,
-				21CB3E07268CB62500CA1F1B /* HikingMapView.swift in Sources */,
+				21CB3DF8268CB27700CA1F1B /* Trail_BuddyApp.swift in Sources */,
+				21CB3E07268CB62500CA1F1B /* MapView.swift in Sources */,
 				21EC2708268CC3410025611A /* DatabaseManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,16 +394,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Hiking Companion/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Trail\\ Buddy/Preview\\ Content";
 				DEVELOPMENT_TEAM = U8L3UEDRCE;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Hiking Companion/Info.plist";
+				INFOPLIST_FILE = "Trail Buddy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cederache.hikingCompanion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cederache.trailBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,16 +416,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Hiking Companion/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "Trail\\ Buddy/Preview\\ Content";
 				DEVELOPMENT_TEAM = U8L3UEDRCE;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "Hiking Companion/Info.plist";
+				INFOPLIST_FILE = "Trail Buddy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.cederache.hikingCompanion;
+				PRODUCT_BUNDLE_IDENTIFIER = com.cederache.trailBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -435,7 +435,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		21CB3DEF268CB27700CA1F1B /* Build configuration list for PBXProject "Hiking Companion" */ = {
+		21CB3DEF268CB27700CA1F1B /* Build configuration list for PBXProject "Trail Buddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21CB3E01268CB27900CA1F1B /* Debug */,
@@ -444,7 +444,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		21CB3E03268CB27900CA1F1B /* Build configuration list for PBXNativeTarget "Hiking Companion" */ = {
+		21CB3E03268CB27900CA1F1B /* Build configuration list for PBXNativeTarget "Trail Buddy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				21CB3E04268CB27900CA1F1B /* Debug */,
