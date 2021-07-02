@@ -17,5 +17,8 @@ class ListItemsStore: ObservableObject {
     
     func fetch() {
         listItems = ListItem.getAll(sortedBy: "_order", ascending: true) as? [ListItem] ?? []
+        for listItem in listItems {
+            listItem.fetchChildren()
+        }
     }
 }

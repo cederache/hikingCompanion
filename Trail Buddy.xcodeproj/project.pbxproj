@@ -88,15 +88,15 @@
 		21CB3DF6268CB27700CA1F1B /* Trail Buddy */ = {
 			isa = PBXGroup;
 			children = (
-				21EC2706268CC3370025611A /* Managers */,
-				21EC2703268CC31B0025611A /* Utils */,
-				21EC26FE268CC2660025611A /* Entities */,
-				21CB3DF7268CB27700CA1F1B /* Trail_BuddyApp.swift */,
-				21CB3E0F268CB6BB00CA1F1B /* Views */,
 				21CB3DFB268CB27900CA1F1B /* Assets.xcassets */,
+				21EC26FE268CC2660025611A /* Entities */,
 				21CB3E00268CB27900CA1F1B /* Info.plist */,
 				21CB3E0E268CB6AC00CA1F1B /* Localizable.strings */,
+				21EC2706268CC3370025611A /* Managers */,
 				21CB3DFD268CB27900CA1F1B /* Preview Content */,
+				21CB3DF7268CB27700CA1F1B /* Trail_BuddyApp.swift */,
+				21EC2703268CC31B0025611A /* Utils */,
+				21CB3E0F268CB6BB00CA1F1B /* Views */,
 			);
 			path = "Trail Buddy";
 			sourceTree = "<group>";

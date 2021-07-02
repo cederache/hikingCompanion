@@ -9,19 +9,38 @@ import SwiftUI
 
 struct ListItemRow: View {
     @EnvironmentObject var listItemsStore: ListItemsStore
+    
     var itemId: String
-
     var update: (() -> Void)?
+    var isNewItem: Bool = false
 
     @State private var text: String = ""
 
     var item: ListItem? {
-        listItemsStore.listItems.first(where: { $0.id == itemId })
+        isNewItem ? nil : listItemsStore.listItems.first(where: { $0.id == itemId })
     }
 
     func onChange() {
-        item?.save()
+        if item?.name.isEmpty ?? false || item?.name.replacingOccurrences(of: " ", with: "").isEmpty ?? false {
+            if !isNewItem {
+                // Can't delete an item not saved
+                item?.delete()
+            }
+        } else {
+            if isNewItem {
+                // Create a new ListItem and reset forced one
+                let newItem = ListItem(name: text)
+                newItem.save()
+                text = ""
+            } else {
+                item?.save()
+            }
+        }
         update?()
+    }
+    
+    var emptyNewItem: Bool {
+        isNewItem && text.isEmpty
     }
 
     var body: some View {
@@ -30,16 +49,22 @@ struct ListItemRow: View {
                 item?.done.toggle()
                 self.onChange()
             }) {
-                if item?.done ?? false {
-                    Circle()
-                        .fill()
-                } else {
-                    Circle()
-                        .stroke()
+                Group {
+                    if emptyNewItem {
+                        Image(systemName: "plus")
+                    } else if item?.done ?? false {
+                        Circle()
+                            .fill()
+                    } else {
+                        Circle()
+                            .stroke()
+                    }
                 }
+                .frame(width: 20, height: 20)
+                .padding([.trailing], 5)
             }
             .foregroundColor(.accentColor)
-            .frame(width: 20, height: 20)
+            .disabled(emptyNewItem)
             
             TextField("", text: $text) { _ in
             } onCommit: {
@@ -50,15 +75,21 @@ struct ListItemRow: View {
             .onAppear {
                 text = self.item?.name ?? ""
             }
-
-            if self.item?.subItems().count ?? 0 > 0 {
-                Button(action: {
-                    self.item?.expanded.toggle()
-                }) {
-                    Image(self.item?.expanded ?? false ? "chevron.down" : "chevron.right")
-                }
-            }
         }
+    }
+}
+
+extension ListItemRow {
+    init(itemId: String, update:(()->Void)? = nil) {
+        self.itemId = itemId
+        self.isNewItem = false
+        self.update = update
+    }
+    
+    init(isNewItem: Bool, update:(()->Void)? = nil) {
+        itemId = ""
+        self.isNewItem = isNewItem
+        self.update = update
     }
 }
 

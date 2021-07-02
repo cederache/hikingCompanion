@@ -22,17 +22,13 @@ struct ListView: View {
                         ListItemRow(itemId: item.id) {
                             self.fetchData()
                         }
-
-                        if item.expanded {
-                            ForEach(item.subItems()) { subItem in
-                                ListItemRow(itemId: subItem.id) {
-                                    self.fetchData()
-                                }
-                            }
-                        }
                     }
                     .onDelete(perform: delete)
                     .onMove(perform: move)
+
+                    ListItemRow(isNewItem: true) {
+                        self.fetchData()
+                    }
                 }
                 .toolbar {
                     EditButton()
@@ -43,21 +39,6 @@ struct ListView: View {
                     self.fetchData()
                 }
                 .listStyle(PlainListStyle())
-
-                HStack {
-                    Button(action: {
-                        let newItem = ListItem(name: "")
-                        newItem.save()
-                        listItemsStore.listItems.append(newItem)
-                    }) {
-                        Image(systemName: "plus.circle.fill")
-                        Text("new_item")
-                    }
-                    .foregroundColor(.accentColor)
-                    
-                    Spacer()
-                }
-                .padding()
             }
         }
     }

@@ -16,8 +16,9 @@ class ListItem: Object, EntitySafe, Codable, Identifiable {
     @objc internal dynamic var _done: Bool = false
     @objc internal dynamic var _expanded: Bool = false
     
-    private var _subItems: [ListItem]? = nil
     private var _parentItem: ListItem? = nil
+    
+    var children: [ListItem]?
     
     override static func primaryKey() -> String? {
         return "_id"
@@ -103,10 +104,11 @@ class ListItem: Object, EntitySafe, Codable, Identifiable {
                 modifyIfNeeded {
                     _done = newValue
                     if let parentItem = parentItem() {
+                        parentItem.fetchChildren()
                         // Set done to false on parentItem if we undo a subItem
                         if newValue == false && parentItem.done == true {
                             parentItem.done = false
-                        } else if newValue == true && parentItem.subItems().allSatisfy({ $0.done == true }) {
+                        } else if newValue == true && parentItem.children?.allSatisfy({ $0.done == true }) ?? true {
                             // Set done to true on parentItem if every subItems is true
                             parentItem.done = true
                         }
@@ -131,14 +133,6 @@ class ListItem: Object, EntitySafe, Codable, Identifiable {
     
     // MARK: Helpers
     
-    func subItems(forceFetch: Bool = false) -> [ListItem] {
-        if !forceFetch && _subItems != nil {
-            return _subItems ?? []
-        }
-        _subItems = ListItem.getAll(where: "_parentId", value: id) as? [ListItem]
-        return _subItems ?? []
-    }
-    
     func parentItem(forceFetch: Bool = false) -> ListItem? {
         if !forceFetch && _parentItem != nil {
             return _parentItem
@@ -148,6 +142,13 @@ class ListItem: Object, EntitySafe, Codable, Identifiable {
         }
         _parentItem = ListItem.getOneById(id: parentId) as? ListItem
         return _parentItem
+    }
+    
+    func fetchChildren() {
+        children = ListItem.getAll(where: "_parentId", value: id) as? [ListItem]
+        if children?.count == 0 {
+            children = nil
+        }
     }
 }
 
