@@ -2,6 +2,15 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSLocationTemporaryUsageDescriptionDictionary</key>
+	<dict>
+		<key>MGLAccuracyAuthorizationDescription</key>
+		<string>Merci d&apos;activer le positionnement précis. Les directions étape par étape ne fonctionnera que lorsque le positionnement précis sera activé.</string>
+	</dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>L&apos;accès à votre position est requise pour l&apos;afficher sur la carte.</string>
+	<key>MGLMapboxAccessToken</key>
+	<string>pk.eyJ1IjoiZ2hvc3RldmlsIiwiYSI6ImNqOG83bjBzYzAwOWcyd21rejN0Z2Eya2QifQ.5QVKBe6u97mYj9biAU_-Nw</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

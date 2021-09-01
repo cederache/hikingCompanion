@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		217AC39F268DA95900A19F7D /* View+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AC39E268DA95900A19F7D /* View+Utils.swift */; };
 		217AC3A1268DB12900A19F7D /* ListItemsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217AC3A0268DB12900A19F7D /* ListItemsStore.swift */; };
+		21B44FB02692F98700BBAE68 /* MapBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B44FAF2692F98700BBAE68 /* MapBoxView.swift */; };
 		21CB3DF8268CB27700CA1F1B /* Trail_BuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3DF7268CB27700CA1F1B /* Trail_BuddyApp.swift */; };
 		21CB3DFA268CB27700CA1F1B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21CB3DF9268CB27700CA1F1B /* MainView.swift */; };
 		21CB3DFC268CB27900CA1F1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21CB3DFB268CB27900CA1F1B /* Assets.xcassets */; };
@@ -29,11 +30,13 @@
 		21EC270F268CC3B60025611A /* LoggingConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC270C268CC3B60025611A /* LoggingConfiguration.swift */; };
 		21EC2712268CC6370025611A /* Willow in Frameworks */ = {isa = PBXBuildFile; productRef = 21EC2711268CC6370025611A /* Willow */; };
 		21EC2714268CC97D0025611A /* ListItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EC2713268CC97D0025611A /* ListItemRow.swift */; };
+		9A8F9983E81C9016E323E8EC /* Pods_Trail_Buddy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7D8BDE433315CF80B672E7A /* Pods_Trail_Buddy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		217AC39E268DA95900A19F7D /* View+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Utils.swift"; sourceTree = "<group>"; };
 		217AC3A0268DB12900A19F7D /* ListItemsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemsStore.swift; sourceTree = "<group>"; };
+		21B44FAF2692F98700BBAE68 /* MapBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBoxView.swift; sourceTree = "<group>"; };
 		21CB3DF4268CB27700CA1F1B /* Trail Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Trail Buddy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		21CB3DF7268CB27700CA1F1B /* Trail_BuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trail_BuddyApp.swift; sourceTree = "<group>"; };
 		21CB3DF9268CB27700CA1F1B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -52,6 +55,9 @@
 		21EC270B268CC3B60025611A /* EmojiModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmojiModifier.swift; sourceTree = "<group>"; };
 		21EC270C268CC3B60025611A /* LoggingConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingConfiguration.swift; sourceTree = "<group>"; };
 		21EC2713268CC97D0025611A /* ListItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemRow.swift; sourceTree = "<group>"; };
+		6A0A6A05CE4F666BE0BF5676 /* Pods-Trail Buddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trail Buddy.debug.xcconfig"; path = "Target Support Files/Pods-Trail Buddy/Pods-Trail Buddy.debug.xcconfig"; sourceTree = "<group>"; };
+		B7D8BDE433315CF80B672E7A /* Pods_Trail_Buddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trail_Buddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F1C984609FB2AD51FF24AA /* Pods-Trail Buddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trail Buddy.release.xcconfig"; path = "Target Support Files/Pods-Trail Buddy/Pods-Trail Buddy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,17 +69,29 @@
 				21EC26FA268CBF3B0025611A /* RealmSwift in Frameworks */,
 				21EC26F8268CBF3B0025611A /* Realm in Frameworks */,
 				21EC26FD268CBF740025611A /* Sentry in Frameworks */,
+				9A8F9983E81C9016E323E8EC /* Pods_Trail_Buddy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0300D2CB2F5AD582EECABADE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A0A6A05CE4F666BE0BF5676 /* Pods-Trail Buddy.debug.xcconfig */,
+				D9F1C984609FB2AD51FF24AA /* Pods-Trail Buddy.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		21CB3DEB268CB27700CA1F1B = {
 			isa = PBXGroup;
 			children = (
 				21CB3DF6268CB27700CA1F1B /* Trail Buddy */,
 				21CB3DF5268CB27700CA1F1B /* Products */,
+				0300D2CB2F5AD582EECABADE /* Pods */,
+				BA086137E0D6A3E80340BEE2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -117,6 +135,7 @@
 				21CB3E08268CB65400CA1F1B /* ListView.swift */,
 				21EC26F4268CB8920025611A /* SettingsView.swift */,
 				21EC2713268CC97D0025611A /* ListItemRow.swift */,
+				21B44FAF2692F98700BBAE68 /* MapBoxView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -159,6 +178,14 @@
 			path = "Willow Logger";
 			sourceTree = "<group>";
 		};
+		BA086137E0D6A3E80340BEE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B7D8BDE433315CF80B672E7A /* Pods_Trail_Buddy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,9 +193,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 21CB3E03268CB27900CA1F1B /* Build configuration list for PBXNativeTarget "Trail Buddy" */;
 			buildPhases = (
+				B277B802DB67DA8057561E00 /* [CP] Check Pods Manifest.lock */,
 				21CB3DF0268CB27700CA1F1B /* Sources */,
 				21CB3DF1268CB27700CA1F1B /* Frameworks */,
 				21CB3DF2268CB27700CA1F1B /* Resources */,
+				38B8EE162B83665362F097EC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +264,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		38B8EE162B83665362F097EC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trail Buddy/Pods-Trail Buddy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Trail Buddy/Pods-Trail Buddy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Trail Buddy/Pods-Trail Buddy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B277B802DB67DA8057561E00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Trail Buddy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		21CB3DF0268CB27700CA1F1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -253,6 +324,7 @@
 				21CB3E09268CB65400CA1F1B /* ListView.swift in Sources */,
 				21CB3DFA268CB27700CA1F1B /* MainView.swift in Sources */,
 				21CB3DF8268CB27700CA1F1B /* Trail_BuddyApp.swift in Sources */,
+				21B44FB02692F98700BBAE68 /* MapBoxView.swift in Sources */,
 				21CB3E07268CB62500CA1F1B /* MapView.swift in Sources */,
 				21EC2708268CC3410025611A /* DatabaseManager.swift in Sources */,
 			);
@@ -390,6 +462,7 @@
 		};
 		21CB3E04268CB27900CA1F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A0A6A05CE4F666BE0BF5676 /* Pods-Trail Buddy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -414,6 +487,7 @@
 		};
 		21CB3E05268CB27900CA1F1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9F1C984609FB2AD51FF24AA /* Pods-Trail Buddy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
