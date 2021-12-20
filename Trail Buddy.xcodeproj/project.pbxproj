@@ -393,9 +393,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "Trail\\ Buddy/Preview\\ Content";
-				DEVELOPMENT_TEAM = U8L3UEDRCE;
+				DEVELOPMENT_TEAM = F7XJAAS3JA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Trail Buddy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -405,6 +406,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cederache.trailBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev - Beapp - Wildcard";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -415,9 +417,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_ASSET_PATHS = "Trail\\ Buddy/Preview\\ Content";
-				DEVELOPMENT_TEAM = U8L3UEDRCE;
+				DEVELOPMENT_TEAM = F7XJAAS3JA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "Trail Buddy/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -427,6 +430,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cederache.trailBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Dev - Beapp - Wildcard";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

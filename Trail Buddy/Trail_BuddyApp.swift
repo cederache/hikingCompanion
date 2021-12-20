@@ -12,8 +12,8 @@ import SwiftUI
 struct Hiking_CompanionApp: App {
     func onAppear() {
         SentrySDK.start { options in
-            options.dsn = "https://eb6baf06b0be4da1b7423897940e7c4b@o896699.ingest.sentry.io/5841313"
-            options.debug = false
+            options.dsn = "https://015be32dc7d9457a8776f9d933961d04@o1095317.ingest.sentry.io/6114659"
+            options.debug = true
             
             options.environment = "development"
             
